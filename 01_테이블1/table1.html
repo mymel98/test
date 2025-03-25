@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기</title>
+    <style>
+        h1{text-align: center;}
+        table{border: 1px solid #000; width: 600px; margin: auto; border-spacing: 0px; border-collapse: collapse; background: #ffcc00;}
+        td{border: 1px solid #000; text-align: center; padding: 20px; width: 200px;}
+        caption{text-align: right;}
+        .col1{width: 100px;}
+        .col2{width: 250px;}
+        .col3{width: 250px;}
+        .row1{background: #ffcc01;}
+        .row2{background: #cdff00;}
+        .row3{background: #cdff00;}
+        .html{background: pink;}
+
+        
+    </style>
+</head>
+<body>
+    <h1>문서테이블 꾸미기</h1>
+    
+    <table>
+        <caption>*주간시간표 테이블</caption>
+        <!-- 표안에 하나의 행 -->
+        <tr class="row1">
+            <td class="col1">1교시</td>
+            <td class="col2">2교시</td>
+            <td class="col3">3교시</td>
+        </tr>
+        <tr class="row2">
+            <td>포토샵</td>
+            <td class="html">HTML</td>
+            <td>JQUARY</td>
+        </tr>
+        <tr class="row3">
+            <td>일러스트</td>
+            <td>CSS</td>
+            <td>포토폴리오</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
