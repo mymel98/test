@@ -3,37 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>표만들기합치기</title>
+    <title>실적자료게시판</title>
     <style>
-        table{border: 1px solid #000; width: 300px; margin: auto; border-spacing: 0; border-collapse: collapse; margin-bottom: 50px;}
-        th{border: 1px solid #000;}
-        td{border: 1px solid #000; text-align: center;}
+        th{border-top: 3px solid #002b5e;
+            border-bottom: 1px solid #bdbdbd;
+            height: 60px ;
+            background: #fafafa;
+            }
+        table{width: 1100px;
+            margin: auto;
+            border-spacing: 0;
+            border-collapse: collapse;
+            text-align: center;}
+        h1{text-align: center;
+            color: #051249;}
+        td{height: 53px;
+            border-bottom: 1px solid #dfdfdf;}
+        .col3{text-align: left;}
+        tfoot tr th{ 
+            border: 1px solid #e1e1e1;
+            background: #fafafa;
+            height: 48px;}
+        caption{text-align: left;}
+
+
     </style>
 </head>
 <body>
+    <h1>실적자료</h1>
     <table>
-        <tr>
-            <th colspan="3">먹는 것</th>
-            
-        </tr>
-        <tr>
-            <td>사과</td>
-            <td>딸기</td>
-            <td>바나나</td>
-        </tr>
-    </table>
+        <caption> 총 5건</caption>
+        <colgroup>
+            <col width="120">
+            <col width="198">
+            <col width>
+            <col width="148">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>연도</th>
+                <th>구분</th>
+                <th>제목</th>
+                <th>원본보기</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024</td>
+                <td>영업실적</td>
+                <td class="col3">2024년 4분기 영업실적 Data Sheet(영문)</td>
+                <td><img src="./images/posco3.JPG" alt="다운로드"></td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>영업실적</td>
+                <td class="col3">2024년 4분기 영업실적 Data Sheet(국문)</td>
+                <td><img src="./images/posco3.JPG" alt="다운로드"></td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>영업실적</td>
+                <td class="col3">2024년 4분기 영업실적 (영문)</td>
+                <td><img src="./images/posco3.JPG" alt="다운로드"></td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>영업실적</td>
+                <td class="col3">2024년 4분기 영업실적 (국문)</td>
+                <td><img src="./images/posco3.JPG" alt="다운로드"></td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>영업실적</td>
+                <td class="col3">2024년 4분기 영업실적 Data(영문)</td>
+                <td><img src="./images/posco3.JPG" alt="다운로드"></td>
+            </tr>
 
-    <table>
-        <tr>
-            <th rowspan="3">타는 것</th>
-            <td>비행기</td>
-        </tr>
-        <tr>
-            <td>자동차</td>
-        </tr>
-        <tr>
-            <td>기차</td>
-        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">더보기(20/68)</th>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
