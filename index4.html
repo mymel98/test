@@ -3,84 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>표만들기4</title>
+    <title>게시판</title>
     <style>
-        caption{text-align: right;}
-        table{ 
-            border-top: 3px solid #132740; 
-            border-bottom: 1px solid #bababa;
-            width: 1100px; 
-            margin: auto; 
-            border-spacing: 0; 
-            border-collapse: collapse;
-            height: 363px;
-            }
-        td{border: 1px solid #bababa; text-align: center;}
-        th{border: 1px solid #bababa; height: 51px;}
-        .th1{width: 211px;}
-        .th2{width: 179px;}
-        .tr1{background: #f1f1f1;}
-        .col0{border-left: none;}
-        .col1{border-right: none;}
+        h2{text-align: center;}
+        table{width: 893px; margin: auto; border-spacing: 0; border-collapse: collapse; text-align: center;}
+        thead{height: 40px; border-top: 2px solid #efefef; border-bottom: 1px solid #efefef;}
+        tbody{height: 160px;}
+        .td1{text-align: left;}
+        .tr1{border-bottom: 2px solid #efefef;}
+        .tr2{border-bottom: 1px solid #efefef;}
 
     </style>
 </head>
 <body>
+    <h2><em>NOTICE</em></h2>
     <table>
-        <caption>단위: 억원</caption>
-        <tr class="tr1">
-            <th class="th1 col0">연도</th>
-            <th>합계</th>
-            <th>주택</th>
-            <th>토목</th>
-            <th>플랜트</th>
-            <th class="th2 col1">연결조정 등</th>
-        </tr>
-        <tr>
-            <th rowspan="2" class="col0">2024</th>
-            <td>83,184</td>
-            <td>49,481</td>
-            <td>13,710</td>
-            <td>20,868</td>
-            <td class="col1">-875</td>
-        </tr>
-        <tr>
-            <td>100%</td>
-            <td>59.5%</td>
-            <td>16.5%</td>
-            <td>25.1%</td>
-            <td class="col1">-1.1%</td>
-        </tr>
-        <tr>
-            <th rowspan="2" class="col0">2023</th>
-            <td>79,911</td>
-            <td>52,569</td>
-            <td>13,650</td>
-            <td>16,194</td>
-            <td class="col1">-2.502</td>
-        </tr>
-        <tr>
-            <td>100%</td>
-            <td>65.8%</td>
-            <td>17.1%</td>
-            <td>20.3%</td>
-            <td class="col1">-3.1%</td>
-        </tr>
-        <tr>
-            <th rowspan="2" class="col0">2022</th>
-            <td>74,968</td>
-            <td>52,948</td>
-            <td>13,372</td>
-            <td>8,831</td>
-            <td class="col1">-183</td>
-        </tr>
-        <tr>
-            <td>100%</td>
-            <td>70.6%</td>
-            <td>17.8%</td>
-            <td>11.8%</td>
-            <td class="col1">-0.2%</td>
-        </tr>
+        <colgroup>
+            <col width="73">
+            <col width="545">
+            <col width="99">
+            <col width="99">
+            <col width="">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr class="tr1">
+                <td>[공지]</td>
+                <td class="td1">SMART WING에 오신걸 환영합니다.[1]</td>
+                <td>운영자</td>
+                <td>2017-09-22</td>
+                <td>109</td>
+            </tr>
+            <tr class="tr2">
+                <td>3</td>
+                <td class="td1">새해 복 많이 받으세요! 설 맞이 연휴기간 배송일정 안내</td>
+                <td>운영자</td>
+                <td>2017-09-22</td>
+                <td>119</td>
+            </tr>
+            <tr class="tr1">
+                <td>2</td>
+                <td class="td1">SMART WING 런칭 기념 이벤트</td>
+                <td>운영자</td>
+                <td>2017-09-22</td>
+                <td>11</td>
+            </tr>
+            <tr class="tr2">
+                <td>1</td>
+                <td class="td1">SMART WING 신규가입 혜택</td>
+                <td>운영자</td>
+                <td>2017-09-22</td>
+                <td>12</td>
+            </tr>
+        </tbody>
 
     </table>
     
