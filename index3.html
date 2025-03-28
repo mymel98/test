@@ -3,62 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>표만들기3</title>
+    <title>폼과 관련된 태그</title>
     <style>
-        a{text-decoration: none;}
-        table{border: 1px solid black; width: 400px; margin: auto; border-spacing: 0;border-collapse: collapse; margin-bottom: 50px;
-        text-align: center;}
-        .table1{height: 215px;}
-        .table2{height: 267px;}
-        th{border: 1px solid black;}
-        td{border: 1px solid black;}
-
-
+        li{list-style: none; margin-bottom: 25px;}
     </style>
 </head>
 <body>
-    <table class="table1">
-        <tr>
-            <th colspan="4">2020년 판매현황</th>
-        </tr>
-        <tr>
-            <td colspan="2">전반기</td>
-            <td colspan="2">후반기</td>
-        </tr>
-        <tr>
-            <td>계획</td>
-            <td>실적</td>
-            <td>계획</td>
-            <td>실적</td>
-        </tr>
-        <tr>
-            <td>100</td>
-            <td>89</td>
-            <td>100</td>
-            <td>92</td>
-        </tr>
-    </table>
-    <table class="table2">
-        <tr>
-            <th>분류</th>
-            <th>사이트주소(URL)</th>
-        </tr>
-        <tr>
-            <td rowspan="2">검색엔진</td>
-            <td> <a href="https://www.naver.com" target="_blank">네이버(NAVER)</a></td>
-        </tr>
-        <tr>
-            <td> <a href="https://www.daum.net" target="_blank">다음</a></td>
-        </tr>
-        <tr>
-            <td rowspan="2">오픈마켓</td>
-            <td> <a href="https://www.auction.co.kr" target="_blank">옥션(AUCTION)</a></td>
-        </tr>
-        <tr>
-            <td> <a href="https://www.gmarket.co.kr" target="_blank">지마켓</a></td>
-        </tr>
-
-    </table>
+    <form action="">
+        <fieldset>
+            <legend>예약화면폼</legend>
+            <ul>
+                <li>
+                    <label for="date">예약날짜:</label>
+                    <input type="date" name="" id="date">
+                </li>
+                <li>
+                    <label for="time">예약시간</label>
+                    <input type="time" name="" id="time">
+                </li>
+                <li>
+                    <label for="date time">예약날짜시간</label>
+                    <input type="datetime-local" name="" id="date time">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
     
 </body>
 </html>
