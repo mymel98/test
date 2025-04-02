@@ -3,48 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form과 관련된 태그요소</title>
+    <title>주문서</title>
+    <style>
+        fieldset{border: 1px solid #d4a95a }
+        li{list-style: none; margin-bottom: 30px; background: #eeeeee; padding: 10px;}
+        legend{color: #d4a95a;}
+    </style>
 </head>
-<style>
-    li{list-style: none; margin-bottom: 25px;}
-</style>
 <body>
+    <h1>상품 주문서</h1>
     <form action="">
         <fieldset>
-            <legend>개인정보폼</legend>
+            <legend>개인정보</legend>
             <ul>
                 <li>
-                    <input type="radio" name="gender" id="man" checked >
-                    <label for="man">남</label>
-                    <input type="radio" name="gender" id="women" >
-                    <label for="women">여</label>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="여백없이 입력" autofocus required>
                 </li>
                 <li>
-                    <label for="tour">여행</label>
-                    <input type="checkbox" name="" id="tour">
-                    <label for="movie" >영화</label>
-                    <input type="checkbox" name="" id="movie">
-                    <label for="book">도서</label>
-                    <input type="checkbox" name="" id="book">
+                    <label for="pw">비밀번호</label>
+                    <input type="password" name="" id="pw" placeholder="비밀번호를 입력하시오">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="place">주소</label>
+                    <input type="text" id="place">
                 </li>
                 <li>
-                    <label for="color">컬러선택</label>
-                    <select name="" id="color">
-                        <option value="">:::::색상을 선택하시오:::::</option>
-                        <option value="">빨강</option>
-                        <option value="">파랑</option>
-                        <option value="">초록</option>
+                    <label for="phone">전화번호</label>
+                    <select name="" id="phone">
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">017</option>
                     </select>
+                    <input type="text" id="phone" maxlength="4">
+                    <input type="text" id="phone" maxlength="4">
                 </li>
                 <li>
-                    <label for="color multiful">컬러다중선택</label>
-                    <select name="" id="color multiful">
-                        <option value="">:::::색상을 선택하시오:::::</option>
-                        <option value="">빨강</option>
-                        <option value="">파랑</option>
-                        <option value="">초록</option>
-                    </select>
+                    <label for="memo">메모</label>
+                    <textarea name="" id="memo" placeholder="여기에 메모를 입력하세요"></textarea>
                 </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                    <label for="ga">과테말라 안티구아 (100g)</label>
+                    <input type="text" id="ga">개
+                </li>
+                <li>
+                    <label for="im">인도네시아 만델링 (100g)</label>
+                    <input type="text" id="im">개
+                </li>
+                <li>
+                    <label for="tb">탐라는도다 (블렌딩) (100g)</label>
+                    <input type="text" id="tb">개
+                </li>
+                <li>
+                    <label for="no1">01</label>
+                    <input type="checkbox" id="no1">
+                    <label for="no2">02</label>
+                    <input type="checkbox" id="no2">
+                    <label for="no3">03</label>
+                    <input type="checkbox" id="no3">
+                    <label for="no4">04</label>
+                    <input type="checkbox" id="no4">
+                </li>
+                <li>
+                    <label for="r01">r01</label>
+                    <input type="radio" name="r1" id="r01">
+                    <label for="r02">r02</label>
+                    <input type="radio" name="r1" id="r02">
+                    <label for="r03">r03</label>
+                    <input type="radio" name="r1" id="r03">
+                    <label for="r04">r04</label>
+                    <input type="radio" name="r1" id="r04">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>버튼모음</legend>
+            <ul>
+                <li>
+                    <input type="submit" value="주문하기">
+                    <input type="submit" value="취소" reset>
+                </li>
+                
             </ul>
         </fieldset>
     </form>
