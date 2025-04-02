@@ -8,6 +8,7 @@
         fieldset{border: 1px solid #d4a95a }
         li{list-style: none; margin-bottom: 30px; background: #eeeeee; padding: 10px;}
         legend{color: #d4a95a;}
+        .li1{background: none;}
     </style>
 </head>
 <body>
@@ -22,7 +23,7 @@
                 </li>
                 <li>
                     <label for="pw">비밀번호</label>
-                    <input type="password" name="" id="pw" placeholder="비밀번호를 입력하시오">
+                    <input type="password" name="" id="pw" placeholder="비밀번호를 입력하시오" autofocus required>
                 </li>
             </ul>
         </fieldset>
@@ -54,15 +55,15 @@
             <ul>
                 <li>
                     <label for="ga">과테말라 안티구아 (100g)</label>
-                    <input type="text" id="ga">개
+                    <input type="number" id="ga">개
                 </li>
                 <li>
                     <label for="im">인도네시아 만델링 (100g)</label>
-                    <input type="text" id="im">개
+                    <input type="number" id="im">개
                 </li>
                 <li>
                     <label for="tb">탐라는도다 (블렌딩) (100g)</label>
-                    <input type="text" id="tb">개
+                    <input type="number" id="tb">개
                 </li>
                 <li>
                     <label for="no1">01</label>
@@ -89,9 +90,9 @@
         <fieldset>
             <legend>버튼모음</legend>
             <ul>
-                <li>
+                <li class="li1">
                     <input type="submit" value="주문하기">
-                    <input type="submit" value="취소" reset>
+                    <input type="reset" value="취소">
                 </li>
                 
             </ul>
