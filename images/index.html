@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5에서 추가된 폼태그요소</title>
+    <style>
+        body{background: #222222; color: #ffffff;}
+        li{margin-bottom: 10px; list-style:none ;}
+        .input1{width: 44px; height: 22px;}
+        .input2{width: 132px; height: 22px;}
+        .input3{width: 132px; height: 22px;}
+        
+        
+    </style>
+</head>
+<body>
+    <h1>입력요소의 종류와 속성</h1>
+    <form action="">
+        <fieldset>
+            <legend>HTML5 입력요소</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디:</label>
+                    <input type="text" name="" id="id" class="input1" maxlength="4" autofocus required>
+                </li>
+                <li>
+                    <label for="pw">패스워드:</label>
+                    <input type="password" name="" id="pw" class="input2" required maxlength="8">
+                </li>
+                <li>
+                    <label for="email">email:</label>
+                    <input type="email" id="email" placeholder="exam@naver.com" class="input3">
+                </li>
+                <li>
+                    <label for="contry">국적:</label>
+                    <label for="in">내국인</label><input type="radio" name="ra" id="in" checked>
+                    <label for="out">외국인</label><input type="radio" name="ra" id="out">
+                </li>
+                <li>
+                    <label for="sh">search:</label>
+                    <input type="search" name="" id="sh" disabled placeholder="webdesign">
+                </li>
+                <li>
+                    <label for="url">url:</label>
+                    <input type="url" id="url" placeholder="https://">
+                </li>
+                <li>
+                    <label for="no">number</label>
+                    <input type="number" name="" id="no" min="1" max="10" value="2" step="2">
+                </li>
+                <li>
+                    <label for="tel">tel:</label>
+                    <input type="tel" name="" id="tel" placeholder="010-1111-2222">
+                </li>
+                <li>
+                    <label for="rg">range:</label>
+                    <input type="range" name="" id="rg" min="1" max="3" value="1">
+                </li>
+                <li>
+                    <label for="date">date:</label>
+                    <input type="date" id="date">
+                </li>
+                <li>
+                    <label for="col">color:</label>
+                    <input type="color" id="col">
+                </li>
+                <li>
+                    <label for="file">file:</label>
+                    <input type="file" id="file">
+                </li>
+                <li>
+                    <label for="">남기고 싶은 말</label>
+                    <textarea name="" id="" cols="60" rows="20"></textarea>
+                </li>
+                <li>
+                    <label for="">진행률70%</label>
+                    <progress max="100" value="70"></progress>
+                </li>
+                <li>
+                    <label for="">사용량50%</label>
+                     <meter value="50" max="100"></meter>
+                </li>
+                <li>
+                    <label for="">id:</label>
+                    <input type="text" placeholder="mmm" readonly>
+                </li>
+            </ul>
+            <hr>
+            <input type="button" value="로그인">
+            <input type="button" value="취소">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
