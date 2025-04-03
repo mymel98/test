@@ -3,69 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>게시판</title>
+    <title>Document</title>
     <style>
-        h2{text-align: center;}
-        table{width: 893px; margin: auto; border-spacing: 0; border-collapse: collapse; text-align: center;}
-        thead{height: 40px; border-top: 2px solid #efefef; border-bottom: 1px solid #efefef;}
-        tbody{height: 160px;}
-        .td1{text-align: left;}
-        td{border-bottom: 1px solid #efefef;}
-
+        *{margin: 0; padding: 0;}
+        div{width: 630px; border: 1px dotted #787878; margin: auto; padding: 40px 15px; }
+        div h1{margin-bottom: 24px;}
+        div h2{color: #fff; background: #222; margin-bottom: 28px; padding: 9px 6px;}
+        div p{margin-bottom: 35px; letter-spacing: 2px; line-height: 28px;}
+        .last{margin-bottom: 0; color: #0303f9;}
+        .h22{color: #0303f9; background: none;}
+        div p span{color: #99434c; font-weight: 500;}
+        .span2{color: #0303f9;}
     </style>
 </head>
 <body>
-    <h2><em>NOTICE</em></h2>
-    <table>
-        <colgroup>
-            <col width="73">
-            <col width="545">
-            <col width="99">
-            <col width="99">
-            <col width="">
-        </colgroup>
-        <thead>
-            <tr>
-                <th>번호</th>
-                <th>제목</th>
-                <th>작성자</th>
-                <th>작성일</th>
-                <th>조회수</th>
-            </tr>
-            
-        </thead>
-        <tbody>
-            <tr>
-                <td>[공지]</td>
-                <td class="td1">SMART WING에 오신걸 환영합니다.[1]</td>
-                <td>운영자</td>
-                <td>2017-09-22</td>
-                <td>109</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td class="td1">새해 복 많이 받으세요! 설 맞이 연휴기간 배송일정 안내</td>
-                <td>운영자</td>
-                <td>2017-09-22</td>
-                <td>119</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td class="td1">SMART WING 런칭 기념 이벤트</td>
-                <td>운영자</td>
-                <td>2017-09-22</td>
-                <td>11</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="td1">SMART WING 신규가입 혜택</td>
-                <td>운영자</td>
-                <td>2017-09-22</td>
-                <td>12</td>
-            </tr>
-        </tbody>
+    <div>
+        <h1>회사 소개</h1>
+        <h2>“사람을 구체적으로 도와주는 책”</h2>
+        <p>
+            이지스퍼블리싱(주)의 책에는 <span>‘사람들에게 구체적으로 도움이 되는 책’을 만든다는 출판 가치가 담겨 있습니다.</span>
+        </p>
+        <p>
+            2010년 5월 출범한 이지스퍼블리싱(주)는 크게 두 영역의 책을 출간합니다. IT 실용 도서와 학습 분야 도서입니다. IT 교재와 사진 책 등 실용서는 이지스퍼블리싱 브랜드로, 학습과 자녀교육 도서는 이지스에듀 브랜드로 출간하고 있습니다.
+        </p>
+        <h2 class="h22">이지스퍼블리싱의 미션</h2>
+        <p>사람에게 구체적으로 도움을 주는 책 <br>
+            우리는 열심히 사는 사람들에게 <span class="span2">도움</span>이 되고 싶습니다. <br>
+            우리는 책을 출간하기 전에 질문할 것입니다. <br>
+            "이 책이 사람들에게 도움이 됩니까?"
+        </p> 
+        <p class="last">
+            정보의 지름길을 만들어 빠르게 원하는 곳으로 가도록 도와주는 책. 손에 잡히는 이익을 얻을 수 있도록 도움이 되는 책을 만들고 싶습니다.
+        </p>
 
-    </table>
+
+            
+    </div>
     
 </body>
 </html>
