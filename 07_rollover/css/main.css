@@ -17,8 +17,7 @@ button{border: none; background: none; cursor: pointer;}
 .header ul li a{color: black; font-size: 18px; font-weight: 700;}
 .header ul li:hover a{color: #67a9f7;}
 .box{width: 800px; margin: auto; margin-bottom: 50px;}
-button{border: 1px solid blue; width: 234px; height: 73px; border: 1px solid #dfdfdf; border-radius: 12px; font-size: 20px;}
-button:hover{background: #000; color: #fff;}
+.btn1{width: 234px; height: 73px; border: 1px solid #dfdfdf; border-radius: 12px; font-size: 20px;}
 .btn1:hover{background: #000; color: #fff;}
 .btn2{width: 112px; height: 40px; border-bottom: 1px solid #222; text-align: left; background: url(../images/ico_plus.png) no-repeat right center; border-radius: 0;}
 .btn3{width: 240px; height: 38px; border: 1px solid #c7c7c7; text-align: left; text-indent: 20px; background: url(../images/ico_sel_arr.gif) no-repeat 217px center;}
