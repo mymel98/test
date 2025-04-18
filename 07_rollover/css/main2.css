@@ -13,3 +13,4 @@
 .btn2:hover{background: #333 url(../images/icon_arrow_top_16x16_w.svg) no-repeat 151px center; border: 1px solid #ccc; color: #fff;}
 .btn3{width: 179px; height: 56px; background: #245bf4; border: 1px solid #3e5ca5; color: #fff; font-size: 18px;}
 .btn3:hover{background: blue; color: #fff; border: 1px solid #3e5ca5;}
+button{cursor: pointer;}
