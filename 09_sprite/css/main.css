@@ -1,0 +1,23 @@
+@charset "utf-8";
+body{font-family: "akfrdms rhelr", "malgun-gothic" sans-serif;}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.header{width: 100%; height: 90px; background: url(../images/bg_head.png) repeat-x;}
+.header h1{padding-top: 10px; padding-left: 23px;}
+.header ul li{float: left;}
+.header ul li a{ display: block; width: 79px; height: 33px; text-indent: -99999px;}
+.header ul .first a{width: 77px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat;}
+.header ul .first:hover a{background-position-y: -68px;}
+.header ul .li2 a{width: 82px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -170px;}
+.header ul .li2:hover a{background-position-y: -68px;}
+.header ul .li3 a{width: 96px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -255px;}
+.header ul .li3:hover a{background-position-y: -68px;}
+.header ul .li4 a{width: 74px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -355px;}
+.header ul .li4:hover a{background-position-y: -68px;}
+.header ul .li5 a{width: 93px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -430px;}
+.header ul .li5:hover a{background-position-y: -68px;}
+.header ul .li6 a{width: 87px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -530px;}
+.header ul .li6:hover a{background-position-y: -68px;}
+.header ul .li7 a{width: 117px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -620px;}
+.header ul .li7:hover a{background-position-y: -68px;}
