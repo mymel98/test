@@ -20,4 +20,6 @@ a{text-decoration: none;}
 .header ul .li6 a{width: 87px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -530px;}
 .header ul .li6:hover a{background-position-y: -68px;}
 .header ul .li7 a{width: 117px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -620px;}
-.header ul .li7:hover a{background-position-y: -68px;}
+.header ul .li7:hover a{background-position-y: -68px;}    
+.header ul .li8 a{width: 76px; height: 33px; background: url(../images/btn_lnb_v3.png) no-repeat; background-position-x: -835px;}
+.header ul .li8:hover a{background-position-y: -68px;}
