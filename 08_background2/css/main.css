@@ -7,7 +7,7 @@ a{text-decoration: none;}
 .section h2{text-align: center; font-size: 36px; color: #333; font-weight: 900;}
 .section h2 span{ color: #fb2736;}
 .section p{text-align: center; font-size: 18px; color: #666; font-weight: 700; margin-top: 10px;}
-.section ul{width: 100%;}
+.section ul{width: 100%; margin-top: 30px;}
 .section ul .first{width: 250px; height: 234px; background: url(../images/img_dy_off.jpg) no-repeat; float: left;}
 .section ul .first:hover{background: url(../images/img_dy_on.jpg);}
 .section ul .li2{width: 250px; height: 234px; background: url(../images/img_mn_off.jpg) no-repeat; float: left;}
