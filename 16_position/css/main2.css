@@ -1,0 +1,16 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun-gothic" sans-serif;} 
+.header{width: 1000px; height: 1000px; background: skyblue; margin: auto; position: relative;} 
+.header div:first-child{width: 200px; height: 200px; background: navy; position: absolute; left: 0; top: 0;}   
+.header div:nth-child(2){width: 200px; height: 200px; background: yellowgreen; position: absolute; left: 100px; top: 100px;}       
+.header div:nth-child(3){width: 200px; height: 200px; background: brown; position: absolute; left: 200px; top: 200px;}       
+.header div:nth-child(4){width: 200px; height: 200px; background: yellow; position: absolute; left: 400px; top: 400px;}       
+.header div:nth-child(5){width: 200px; height: 200px; background: navy; position: absolute; left: 0; bottom: 0;}       
+.header div:nth-child(6){width: 200px; height: 200px; background: yellowgreen; position: absolute; left: 100px; bottom: 100px;}       
+.header div:nth-child(7){width: 200px; height: 200px; background: brown; position: absolute; left: 200px; bottom: 200px;}       
+.header div:nth-child(8){width: 200px; height: 200px; background: navy; position: absolute; right: 0; top: 0;}       
+.header div:nth-child(9){width: 200px; height: 200px; background: yellowgreen; position: absolute; right: 100px; top: 100px;}       
+.header div:nth-child(10){width: 200px; height: 200px; background: brown; position: absolute; right: 200px; top: 200px;}       
+.header div:nth-child(11){width: 200px; height: 200px; background: navy; position: absolute; right: 0; bottom: 0;}       
+.header div:nth-child(12){width: 200px; height: 200px; background: yellowgreen; position: absolute; right: 100px; bottom: 100px;}       
+.header div:last-child{width: 200px; height: 200px; background: brown; position: absolute; right: 200px; bottom: 200px;}       
