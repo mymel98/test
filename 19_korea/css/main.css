@@ -8,8 +8,8 @@ a{text-decoration: none;}
       background: #fff;
        border-bottom: 1px solid #e1e1e1;
         position: relative;}
-.header h1{position: absolute; left: 50%; top: 50%; margin-left: -139px; margin-top: -10px;}
-.header h1 a{display: block; width: 278px; height: 20px; background: url(../images/logo.jpg) no-repeat; text-indent: -99999px;}
+.header h1{position: absolute; left: 50%; top: 50%; margin-left: -69.5px; margin-top: -5px;}
+.header h1 a{display: block; width: 139px; height: 10px; background: url(../images/logo.jpg) no-repeat; text-indent: -99999px; background-size: 139px 10px;}
 .header .m_menu{background: url(../images/btn_memu.jpg) no-repeat; width: 44px; height: 48.5px; text-indent: -99999px; background-size: 44px 48.5px; position: absolute; left: 0; top: 0;}
 .header .m_search{background: url(../images/icon_search.jpg) no-repeat; width: 20px; height: 20px; text-indent: -99999px; position: absolute; right: 10px; top: 50%; margin-top: -10px;}
 .main{width: 100%;}
