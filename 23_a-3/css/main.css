@@ -1,0 +1,21 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun-gothic", sans-serif;}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.wrap{width: 1200px; height: 700px; background: gold; margin: auto;}
+.wrap .header{width: 100%; height: 100px; background: aqua; display: flex; justify-content: space-between; align-items: center;}
+.wrap .header h1{width: 200px; height: 100px; background: bisque; display: flex; justify-content: center; align-items: center;}
+.wrap .header ul{display: flex; width: 600px; height: 100px; background: chartreuse; justify-content: space-between; align-items: center;}
+.wrap .slide{width: 100%; height: 300px; background: cadetblue;}
+.wrap .slide div{font-size: 24px; font-weight: 900; text-align: center; line-height: 300px;}
+.wrap .contents{width: 100%; height: 200px; background: orange; display: flex;}
+.wrap .contents div{width: 400px; height: 200px; font-size: 24px; font-weight: 900; text-align: center; line-height: 200px;}
+.wrap .contents .border{background: gray;}
+.wrap .contents .banner{background: pink;}
+.wrap .contents .go{background: purple;}
+.wrap .footer{width: 100%; height: 100px; background: lavender; display: flex;}
+.wrap .footer h1{width: 200px; height: 100px; background: khaki; text-align: center; line-height: 100px;}
+.wrap .footer div .menu{width: 1000px; height: 50px; background: lawngreen;}
+.wrap .footer div .copy{width: 1000px; height: 50px; background: magenta;}
+.wrap .footer div{font-size: 24px; font-weight: 900; line-height: 50px; text-align: center;}
