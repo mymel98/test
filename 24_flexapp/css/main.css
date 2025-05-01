@@ -1,0 +1,22 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun-gothic", sans-serif;}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.header{width: 100%; height: 80px; border-bottom: 1px solid #ededed;}
+.header .inner{width: 1424px; height: 80px; margin: auto; display: flex; justify-content: flex-end;}
+.header .inner .gnb{display: flex; height: 80px; align-items: center; gap: 43px;}
+.header .inner .gnb li a{color: #666; font-weight: 500; font-size: 16px;}
+.main{width: 100%;}
+.main .title{width: 1424px; height: 402px; margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 50px;}
+.main .title h2{font-size: 36px; font-weight: 900;}
+.main .title button{width: 140px; height: 60px; background: #ebaf10; font-size: 20px; font-weight: 700; color: #fff; border: none; border-radius: 8px; cursor: pointer;}
+.main .title button:hover{background: #a77d0e;}
+.main .gal1{width: 1424px; margin: auto; background: #fff; display: flex; flex-wrap: wrap; gap: 20px;}
+.main .gal1 li{width: 461.33px; border: 1px solid #e4e4e4; box-sizing: border-box;}
+.main .gal1 li a{display: block; width: 100%; height: 100%;}
+.main .gal1 li a .imgbox{width: 100%; height: 259px; background: pink;}
+.main .gal1 li a .imgbox img{width: 100%; height: 100%;}
+.main .gal1 li a .info{width: 100%; padding: 20px; background: #fff; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px;}
+.main .gal1 li a .info h3{font-size: 27px; color: #000; font-weight: 700;}
+.main .gal1 li a .info p{font-size: 18px; color: #555; font-weight: 500;}
