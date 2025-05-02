@@ -8,7 +8,7 @@ button{cursor: pointer;}
 .header{width: 100%; height: 72px; background: #fff;}
 .header .inner{width: 1000px; height: 72px; margin: auto; display: flex; justify-content: flex-start; align-items: center;}
 .line{width: 100%; height: 4px; background: url(../images/bg_gnb.gif) no-repeat;}
-.main{width: 100%; height: 2200px; background: gold;}
+.main{width: 100%; height: 2200px;}
 .footer{width: 100%; height: 119px; background: #f8f8f8; border-top: 1px solid #dadedd;}
 .footer .inner{width: 1000px; height: 119px; margin: auto; display: flex; justify-content: space-between; padding: 30px; box-sizing: border-box;}
 .footer .inner .wrap ul{display: flex; width: 610px; flex-wrap: wrap; gap: 10px;}
