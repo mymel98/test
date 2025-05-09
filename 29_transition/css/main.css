@@ -1,0 +1,5 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun-gothic" sans-serif;}
+*{margin: 0; padding: 0;}
+div{width: 100px; height: 100px; background: red; color: #fff; text-align: center; line-height: 100px; -webkit-transition: all 3s ease-in-out; -o-transition: all 3s;}
+div:hover{width: 1000px; height: 800px;}
