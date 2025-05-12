@@ -14,7 +14,7 @@ button{border: none; background: none; cursor: pointer;}
 .section .inner .product li{width: 313.2px; height: 410px; background: gold;}
 .section .inner .product li a{display: block; width: 100%; height: 100%; overflow: hidden; position: relative;}
 .section .inner .product li a img{width: 100%; height: 100%;}
-.section .inner .product li a .bar{width: 100%; background: rgba(255, 255, 255, 0.5); position: absolute; left: 0; bottom: -50%; padding: 22px 0;}
+.section .inner .product li a .bar{width: 100%; background: rgba(255, 255, 255, 0.5); position: absolute; left: 0; bottom: -50%; padding: 22px 0; transition: all 0.2s ease-in-out;}
 .section .inner .product li a:hover .bar{bottom: 0;}
 .section .inner .product li a .bar .color{display: flex; justify-content: center; gap: 4px;}
 .section .inner .product li a .bar .color span{display: block; width: 8px; height: 8px; background: red; border-radius: 100%;}
