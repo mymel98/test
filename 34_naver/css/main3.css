@@ -1,0 +1,15 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun gothic", sans-serif;}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.section{width: 100%; height: 830px;}
+.section .inner{width: 1400px; margin: auto;}
+.section .inner ul{display: flex; gap: 130px;}
+.section .inner ul li{width: 380px;}
+.section .inner ul li:hover img{transform: scale(1.1);}
+.section .inner ul li a{display: block; width: 100%; height: 100%;}
+.section .inner ul li a .imgbox{width: 100%; height: 520px; overflow: hidden;}
+.section .inner ul li a .imgbox img{width: 100%; height: 100%; transition: all 0.3s ease-in-out;}
+.section .inner ul li a .tit{width: 100%;}
+.section .inner ul li a .tit{font-size: 27px; color: #353750; font-weight: 700;}
