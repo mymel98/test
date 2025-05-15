@@ -1,0 +1,13 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+.box1{width: 100px; height: 100px; background: blue; color: #fff; text-align: center; line-height: 100px; position: absolute; left: 0; top: 0;
+    animation-name: box_ani; animation-duration: 2s; animation-fill-mode: forwards; animation-iteration-count: 5; animation-iteration-count: infinite;
+    animation-delay: 1s; animation-timing-function: ease-in-out; animation-direction: alternate;}
+@keyframes box_ani {0%{left: 0;} 100%{left: 1000px;}}
+.box2{width: 100px; height: 100px; background: red; position: absolute; left: 0px; top: 200px; color: #fff; text-align: center; line-height: 100px;}
+@keyframes box2_ani {0%{left: 0;} 25%{left: 250px; background: orange;} 50%{left: 500px; background: yellow;} 75%{left: 750px; background: green;}
+                    100%{left: 1000px; background: blue;}}
+.box3{width: 100px; height: 100px; background: purple; text-align: center; line-height: 100px; position: absolute; left: 0; top: 400px; border-radius: 100%;
+    animation: box3_ani 4s ease-in-out formards infinite;}
+@keyframes box3_ani {0%{left: 0; top: 400px;} 25%{left: 500px; top: 400px;} 50%{left: 500px; top: 900px;} 75%{left: 0; top: 900px;}
+                    100%{left: 0; top: 400px;}}

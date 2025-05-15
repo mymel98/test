@@ -1,0 +1,12 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+.box1{width: 1000px; height: 300px; border: 1px solid blue; margin: auto;}
+.box1 .box2{width: 100px; height: 100px; background: palevioletred; position: absolute; left: 460px; top: 0;
+            animation: box2_ani 2s ease-in-out forwards infinite;}
+@keyframes box2_ani {0%{left: 460px; top: 0;} 25%{left: 1360px; top: 0;} 50%{left: 1360px; top: 200px;}
+                        75%{left: 460px; top: 200px;} 100%{left: 460px; top: 0;}}
+.box3{width: 1000px; height: 300px; border: 1px solid red; margin: auto; margin-top: 200px;}
+.box3 .box4{width: 100px; height: 100px; background: yellow; position: absolute; left: 460px; top: 500px;
+            animation: box4_ani 2s ease-in-out forwards 1;}
+@keyframes box4_ani {0%{left: 460px; top: 500px;} 20%{left: 1360px; top: 500px;} 40%{left: 1360px; top: 700px;}
+                      60%{left: 460px; top: 700px;} 80%{left: 460px; top: 500px;} 100%{left: 360px; top: 500px;}}
