@@ -10,7 +10,7 @@ body{font-family: "맑은 고딕", "malgun gothic", sans-serif;}
 .section .inner .title{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center;}
 .section .inner .title h2{font-size: 32px; font-weight: 900; color: #333; line-height: 46px; opacity: 0; animation: h2_ani 1s ease-in-out forwards 2s;}
 @keyframes h2_ani {0%{opacity: 0;} 100%{opacity: 1;}}
-.section .inner .title p{font-size: 16px; color: #999; line-height: 24px; opacity: 0; animation: p_ani 1s ease-in-out forwards 2s;}
+.section .inner .title p{font-size: 16px; color: #999; line-height: 24px; opacity: 0; animation: p_ani 1s ease-in-out forwards 2.5s;}
 @keyframes p_ani {0%{opacity: 0;} 100%{opacity: 1;}}
-.section .inner .title button{border: none; background: none; cursor: pointer; margin-top: 24px; opacity: 0; animation: button_ani 1s ease-in-out forwards 2s;}
+.section .inner .title button{border: none; background: none; cursor: pointer; margin-top: 24px; opacity: 0; animation: button_ani 1s ease-in-out forwards 3s;}
 @keyframes button_ani {0%{opacity: 0;} 100%{opacity: 1;}}
