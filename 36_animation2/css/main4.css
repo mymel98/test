@@ -1,0 +1,8 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+.section{width: 100%; height: 100vh; background: #fff;}
+.section .box{width: 500px; height: 300px; border: 2px solid #000; position: absolute; left: 50%; top: 50%; transform: translate(-50% ,-50%); overflow: hidden;}
+.section .box .img1{position: absolute; left: 55px; top: 156px; animation: img1_ani 2s ease-in-out forwards;}
+@keyframes img1_ani {0%{left: 55px; top: -100%;} 100%{left: 55px; top: 150px;}}
+.section .box .img2{position: absolute; right: 0; bottom: 0; animation: img2_ani 1s ease-in-out forwards 2s;}
+@keyframes img2_ani {0%{bottom: -100%; right: 0;} 100%{right: 0; bottom: 0;}}
