@@ -27,3 +27,4 @@ a{text-decoration: none;}
 .header .inner .gnb>.menu2>.depth2{width: 258px; display: none;}
 .header .inner .gnb>.menu3>.depth2{width: 171px; display: none;}
 .header .inner .gnb>.last>.depth2{width: 80px; display: none;}
+.header .inner .gnb>.last:hover>.depth2{text-align: center;}
