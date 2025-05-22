@@ -19,9 +19,24 @@ a{text-decoration: none;}
 .inner{width: 1360px; height: 60px; background: #fff;
  margin: auto;}
 .inner .gnb{display: flex; align-items: center;
- height: 60px; justify-content: center; gap: 70px;}
+ height: 60px; justify-content: center; gap: 70px;
+ position: relative;}
 .inner .gnb>li>a{font-size: 16px; color: #111;
- letter-spacing: -1px; font-weight: 500;}
+ letter-spacing: -1px; font-weight: 500; height: 60px; display: block;
+ line-height: 60px;}
 .inner .gnb>li:hover>a{color: #b8a37f;}
+.inner .gnb>li>.depth2{width: 1360px; height: 40px;
+ background: rgba(255, 255, 255, 0.8); position: absolute; left: 0; top: 60px;
+ display: flex; align-items: center; gap: 64px;
+ display: none;}
+.inner .gnb>li:hover .depth2{display: flex;}
+.inner .gnb>li>.depth2 .intro{margin-left: 235px;}
+.inner .gnb>li>.depth2 .news{margin-left: 480px;}
+.inner .gnb>li>.depth2 .center{margin-left: 540px;}
+.inner .gnb>li>.depth2 .info{margin-left: 315px;}
+.inner .gnb>li>.depth2 .company{margin-left: 620px;}
+.inner .gnb>li>.depth2 li:hover a{color: #000;}
+.inner .gnb>li>.depth2 li a{font-size: 14px; color: #777;
+ letter-spacing: -1px;}
 .main{width: 100%;}
 .main .visual{width: 1360px; margin: auto;}
