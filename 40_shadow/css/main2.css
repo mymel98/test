@@ -3,12 +3,12 @@ body{font-family: "맑은 고딕", "malgun gothic", sans-serif;}
 *{margin: 0; padding: 0;}
 .div1{width: 710px; height: 142px;
  border: 1px solid #000; margin: auto;
- text-align: center; margin-top: 38px;
+ margin-top: 38px;
  padding: 38px 45px 47px 45px; box-sizing: border-box;
  border-radius: 8px 24px;}
 .div2{width: 710px; height: 142px;
  border: 1px solid #000; margin: auto;
- text-align: center; margin-top: 50px;
+ margin-top: 50px;
  padding: 38px 45px 47px 45px; box-sizing: border-box;
  box-shadow: 0 0 5px #000; border-radius: 8px;}
 .div3{width: 710px; height: 130px;
