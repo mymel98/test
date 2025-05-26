@@ -1,0 +1,49 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕";}
+*{margin: 0; padding: 0;}
+.box{width: 1400px; height: 640px; 
+    border: 11px solid #000; margin: auto;
+    position: relative;}
+.box:hover .clock{animation-play-state: paused;}
+.box .clock{position: absolute; left: 50%;
+   transform: translateX(-50%); top: 0;
+   transform: rotate(45deg);
+   transform-origin: center top;
+   animation: clock_ani 1s ease-in-out forwards infinite;}
+@keyframes clock_ani{0%{transform: rotate(45deg);}
+      50%{transform: rotate(-45deg);}
+      100%{transform: rotate(45deg);}}
+.box .line{width: 8px; height: 166px;
+   background: #000; margin: auto;}
+.box .circle{width: 165px; height: 165px;
+   background: red url(../images/1.jpg) no-repeat 80%; border-radius: 100%;
+   margin: auto; border: 5px solid #000;
+   background-size: cover;}
+.box h3{position: absolute; left: 50%;
+   transform: translateX(-50%); bottom: 42px;}
+.box .clock2{position: absolute;
+   right: 0; top: 50%; transform: rotate(135deg);
+   transform-origin: center top;
+   margin-right: -82.5px;
+   animation: clock2_ani 1s ease-in-out forwards infinite;}
+@keyframes clock2_ani {0%{transform: rotate(135deg);}
+   50%{transform: rotate(90deg);} 
+   100%{transform: rotate(135deg);}}
+.box:hover .clock2{animation-play-state: paused;}
+.box .clock3{position: absolute; left: 50%;
+   margin-left: -82.5px; bottom: -342px;
+   transform: rotate(-225deg); transform-origin: center top;
+   animation: clock3_ani 1s ease-in-out forwards infinite;}
+@keyframes clock3_ani {0%{transform: rotate(-225deg);}
+   50%{transform: rotate(-135deg);}
+   100%{transform: rotate(-225deg);}}
+.box:hover .clock3{animation-play-state: paused;}
+.box .clock4{position: absolute; left: 0; 
+   top: 50%; transform: translateY(-50%);
+   transform: rotate(315deg); transform-origin: center top;
+   margin-left: -82.5px;
+   animation: clock4_ani 1s ease-in-out forwards infinite;}
+@keyframes clock4_ani {0%{transform: rotate(315deg);}
+   50%{transform: rotate(225deg);} 
+   100%{transform: rotate(315deg);}}
+.box:hover .clock4{animation-play-state: paused;}
