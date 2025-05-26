@@ -27,7 +27,7 @@ body{font-family: "맑은 고딕";}
    margin-right: -82.5px;
    animation: clock2_ani 1s ease-in-out forwards infinite;}
 @keyframes clock2_ani {0%{transform: rotate(135deg);}
-   50%{transform: rotate(90deg);} 
+   50%{transform: rotate(45deg);} 
    100%{transform: rotate(135deg);}}
 .box:hover .clock2{animation-play-state: paused;}
 .box .clock3{position: absolute; left: 50%;
