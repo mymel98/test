@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;
+   background: #7f7f7f;}
+.wrap{width: 915px;
+   margin: auto;}
+header{width: 100%;}
+.wrap header{width: 100%; height: 80px;
+   border: 1px solid #000;
+   background: #d9d9d9; display: flex;
+   justify-content: center; 
+   align-items: center; font-size: 24px;}
+.wrap nav{width: 100%; height: 40px;
+   border: 1px solid #000;
+   background: #d9d9d9;
+   display: flex; justify-content: center;
+   align-items: center; margin-top: 10px;}
+.wrap main{width: 100%; 
+   padding: 45px 12px; background: #d9d9d9;
+   border: 1px solid #000;
+   margin-top: 10px; display: flex;
+   justify-content: space-between;}
+.wrap main .sectionwrap{width: 570px;}
+.wrap main section{width: 100%;
+   border: 1px solid #000;
+   background: #fff; margin-bottom: 10px;
+   padding: 30px;}
+.wrap main section article{width: 100%; height: 85px;
+   background: #ffd966;
+   border: 1px solid #000; display: flex;
+   justify-content: center;
+   align-items: center;}
+.wrap main aside{width: 240px; height: 350px;
+   border: 1px solid #000;
+   background: #fff; display: flex;
+   justify-content: center;
+   align-items: center;}
+.wrap footer{width: 100%; height: 120px;
+   border: 1px solid #000;
+   background: #d9d9d9; margin-top: 10px;
+   display: flex; justify-content: center;
+   align-items: center;}
