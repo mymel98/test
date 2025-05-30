@@ -1,0 +1,30 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun gothic", sans-serif;
+   background: #d3edfa;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+:root{--red: #e94c4c;
+   --bg: #d3edfa;
+   --wh: #fff;
+   --f1: #333;
+   --f2: #555;}
+section{width: 100%; height: 100vh;
+   background: var(--bg);}
+section ul{width: 660px;
+   margin: auto; display: flex;
+   justify-content: space-between;}
+section ul li{width: 318px;}
+section ul li a{display: block; width: 100%;
+   position: relative;}
+section ul li a .imgbox{width: 100%; height: 240px;}
+section ul li a .imgbox img{width: 100%; height: 100%;}
+section ul li a .txt{width: 100%; padding: 40px 30px 30px;
+   background: var(--wh); box-sizing: border-box;}
+section ul li a .txt h2{margin-bottom: 20px; color: var(--f1);}
+section ul li a .txt p{margin-bottom: 15px; color: var(--f2);}
+section ul li a .coupon{width: 128px; height: 35px;
+   background: var(--red); position: absolute;
+   left: 20px; top: 50%; transform: translateY(-50%);
+   text-align: center; color: var(--wh); 
+   line-height: 35px;}
