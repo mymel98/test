@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+/* float 명령으로 반응형 */
+/* pc기기일때:1200px이상 */
+.wrap{width: 1000px; margin: auto;}
+.wrap .red{width: 100%; height: 150px;
+   background: red;}
+.wrap .bg_wrap .blue{width: 50%; height: 120px;
+   background: blue; float: left;}
+.wrap .bg_wrap .green{width: 50%; height: 120px;
+   background: green; float: left;}
+/* 노트북일때:991부터 1199까지 */
+@media ( min-width:991px ) and ( max-width:1199px ){
+    /* pc기준으로 변경된 부분만 코딩 */
+    .wrap{width: 100%;}
+    body{padding: 0 20px;}
+}
+/* 태블릿일때:768부터 991까지 */
+@media ( min-width:768px ) and ( max-width:990px ){
+    .wrap{width: 100%;}
+    .wrap .bg_wrap .blue{height: 240px;}
+    .wrap .bg_wrap .green{height: 240px;}
+}
+/* 모바일기기일때:767부터 320까지 */
+@media ( min-width:320px ) and ( max-width:767px ){
+    .wrap{width: 100%;}
+    .wrap .red{height: 300px;}
+    .wrap .bg_wrap .blue{float: none; width: 100%;}
+    .wrap .bg_wrap .green{float: none; width: 100%;}
+}

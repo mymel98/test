@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+/* pc기기 */
+.wrap{width: 1000px; margin: auto;}
+.wrap .red{width: 100%; height: 150px;
+   background: red;}
+.wrap .bgwrap{display: flex;}
+.wrap .bgwrap .blue{width: 50%; height: 120px;
+   background: blue;}
+.wrap .bgwrap .green{width: 50%; height: 120px;
+   background: green;}
+/* 노트북기기 991-1199*/
+@media ( min-width:991px ) and ( max-width:1199px ){
+    .wrap{width: 100%;}
+    body{padding: 0 20px;}
+}
+/* 태블릿기기 768-990*/
+@media ( min-width:768px ) and ( max-width:990px ){
+    .wrap{width: 100%;}
+    .wrap .bgwrap .blue{height: 240px;}
+    .wrap .bgwrap .green{height: 240px;}
+}
+/* 모바일기기 320-767*/
+@media ( min-width:320px ) and ( max-width:767px ){
+    .wrap{width: 100%;}
+    .wrap .red{height: 300px;}
+    .wrap .bgwrap{flex-direction: column;}
+    .wrap .bgwrap .blue{width: 100%; height: 240px;}
+    .wrap .bgwrap .green{width: 100%; height: 240px;}
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.wrap{width: 100%; position: relative;}
+.wrap .red{width: 100%; height: 300px;
+   background: red;}
+.wrap .blue{position: absolute; width: 100px; height: 300px;
+   background: blue;
+   left: 0; top: 0;}
+.wrap .green{width: 100px; height: 300px;
+   background: green;
+   position: absolute;
+   right: 0; top: 0;}
+/* 노트북 992-1199 */
+@media ( min-width:992px ) and ( max-width:1199px ){
+    .wrap .green{position: static; width: 100%;}
+}
+/* 태블릿 768-991 */
+@media ( min-width:768px) and ( max-width:991px ){
+    .wrap .red{height: 600px;}
+    .wrap .blue{position: static; width: 100%;}
+    .wrap .green{position: static; width: 100%;}
+}
+/* 모바일 320-767 */
+@media ( min-width:320px ) and ( max-width:767px ){
+    .wrap .red{height: 600px;}
+    .wrap .blue{position: static; height: 600px;
+       width: 100%;}
+    .wrap .green{position: static; height: 600px;
+       width: 100%;}
+}
