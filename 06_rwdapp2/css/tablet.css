@@ -1,0 +1,43 @@
+@media ( min-width:768px ) and ( max-width:991px ){
+    header{
+        height: 120px;}
+    header .inner{
+        width: 100%; height: 120px;}
+    header .inner nav{
+        padding-top: 70px;}
+    header .inner h1{
+        left: 50%; transform: translateX(-50%);
+        top: 15px;}
+    header .inner .sns{
+        display: none;}
+    main .visual{
+        height: 600px;
+    }
+    main .work .inner{
+        width: 100%;
+    }
+    main .work .inner h2{
+        font-size: 32px;
+    }
+    main .work .inner p{
+        font-size: 15px;
+    }
+    .skill{
+        padding: 0 20px;
+    }
+    main .skill .inner{
+        width: 100%;
+    }
+    main .skill .inner ul.list li{
+        width: 46%;
+    }
+    main figure.second{
+        margin-top: 100px;
+    }
+    main .news .inner{
+        width: 100%;
+    }
+    main .news .inner ul.list li a .txt h3{
+        font-size: 20px;
+    }
+}
