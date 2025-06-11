@@ -82,9 +82,7 @@ main figure.first p{
     color: #666;
 }
 /* work영역    */
-.work,
-.news
-{
+.work{
     width: 100%; padding: 90px 0 50px;
     background: #efefef;
 }
@@ -200,6 +198,7 @@ main figure.second p{
 main .news{
     width: 100%;
     padding: 90px 0 50px;
+    background: #fff;
 }
 main .news .inner{
     width: 1200px;
