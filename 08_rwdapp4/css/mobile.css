@@ -1,0 +1,36 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    header{
+        height: 50px; height: 50px;
+        padding: 0 15px;
+    }
+    header .inner{
+        width: 100%; height: 50px;
+    }
+    header .inner ul.gnb{
+        display: none;
+    }
+    header .inner h1{
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .m_btn{
+        display: block;
+        width: 42px; height: 35px;
+        background: url(../images/m_menu.png) no-repeat;
+        background-size: 24px;
+        position: absolute;
+        left: 0; top: 50%;
+        transform: translateY(-50%);
+        text-indent: -99999px;
+    }
+    /* 메인영역   */
+    main .visual img{
+        width: 100%;
+    }
+    main .txt p .show{
+        display: block;
+    }
+    main .txt p em{
+        display: none;
+    }
+}
