@@ -3,48 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>올림피아드</title>
-    <style>
-        *{margin: o; padding: 0;}
-        div{width: 645px; border: 2px solid #fe0000; margin: auto;}
-        div h1{background-color: #ffff00; width: 600px; height: 70px; margin: 41px 20px 29px 20px; text-align: center;
-              padding-top: 23px;}
-        div p{margin-left: 20px;}
-        span{color: #0000ee;}
-        .span1, .span2, .span3{color: #fff0d9; background: #850082; width: 43px; height: 25px;
-                                padding: 8px, 5px, 6px, 6px; font-size: 13px; margin-bottom: 16px;}
-        div h3{margin-left: 20px;}
-        div h2{margin-left: 20px; background: #d3d3d3; width: 601px; height: 52px; text-align: center; padding-top: 16px;}
-        div ul li{margin-left: 42px; font-size: 16px;}
-        div ul{margin-top: 25px; margin-bottom: 43px;}
-        .p1{font-size: 12px; line-height: 60px; margin-bottom: 35px;}
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>한국 영재 올림피아드</h1>
-        <p>
-            <span>한국 영재 올림피아드(Korea Olympiad Gifted Studentes)는 ... </span>   
-        </p>
-        <h3>(↑클릭하면 자세한 설명으로 이동합니다.)</h3>    
-        <h2>대회 개요</h2>
-        <ul>
-            <li>대회일시</li>
-            <li>대회일시</li>
-            <li>대회일시</li>
-        </ul>
-        
-        <p class="p1">
-            한국 영재 올림피아드에 참가하는 학생 여러분들을 진심으로 환영하며 격려를 아끼지 않습니다. <br>
-            과학에 관심있고 재능있는 여러분들의 도전을 응원하겠습니다!!
-        </p>   
-        
-        <p >
-            <span class="span1">이벤트</span>
-            <span class="span2">이벤트</span>
-            <span class="span3">이벤트</span>
-        </p>
-    </div>
-    
+    <script>
+        let kor = 100;
+        let math = 100;
+        let eng = 100;
+        let total = kor + math + eng;
+        let ever = total/3;
+
+        document.write("국어점수=" + kor + "<br>");
+        document.write("수학점수=" + math + "<br>");
+        document.write("영어점수=" + eng + "<br>");
+        document.write("총점=" + total + "<br>");
+        document.write("평균=" + ever + "<br>");
+    </script>
 </body>
-</html> 
+</html>
