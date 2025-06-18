@@ -3,64 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>switch문응용</title>
+    <title>3항연산자 응용</title>
 </head>
 <body>
     <script>
-        let month = prompt("1월에서 12월까지 월을 입력해 주세요.")
-        let num = ""
-        switch(month){
-            case "1":
-                num = "31일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "2":
-                num = "28일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "3":
-                num = "31일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "4":
-                num = "30일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "5":
-                num = "31일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "6":
-                num = "30일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "7":
-                num = "31일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "8":
-                num = "31일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "9":
-                num = "30일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "10":
-                num = "31일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "11":
-                num = "30일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            case "12":
-                num = "31일";
-                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
-                break;
-            default:
-                alert("1월-12월중에서만 입력해주세요.")
-        }
+        let age = prompt("나이를 입력해 주세요");
+        age>=19?alert("성인"):alert("미성년자");
     </script>
 </body>
 </html>
