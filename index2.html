@@ -3,22 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>div</title>
-    <style>
-        *{margin: 0; padding: 0;}
-        div{width: 460px; border: 5px solid #808080; padding-left: 15px; padding-right: 15px;
-            padding-top: 30px; padding-bottom: 30px; margin-left: 10px;}
-        div h3{margin-bottom: 30px;}
-    </style>
+    <title>switch문응용</title>
 </head>
 <body>
-    <div>
-        <h3>who am I?</h3>
-        <p>
-            프론트 앤드 웹 기술(front-end web Tech)에 관심이 많습니다 <br>
-            현재 제주의 한 시골마을에서 코딩중입니다
-        </p>
-    </div>
-    
+    <script>
+        let month = prompt("1월에서 12월까지 월을 입력해 주세요.")
+        let num = ""
+        switch(month){
+            case "1":
+                num = "31일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "2":
+                num = "28일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "3":
+                num = "31일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "4":
+                num = "30일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "5":
+                num = "31일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "6":
+                num = "30일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "7":
+                num = "31일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "8":
+                num = "31일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "9":
+                num = "30일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "10":
+                num = "31일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "11":
+                num = "30일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            case "12":
+                num = "31일";
+                alert("입력하신" + month + "월은 일수가" + num + "입니다.");
+                break;
+            default:
+                alert("1월-12월중에서만 입력해주세요.")
+        }
+    </script>
 </body>
 </html>
