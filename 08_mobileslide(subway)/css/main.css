@@ -32,6 +32,9 @@ button{border: none; background: none; cursor: pointer;}
     font-size: 14px;
     line-height: 22px;
 }
+.main .swiper img{
+    width: 100%;
+}
 .main .swiper .swiper-pagination .swiper-pagination-total{
     color: rgba(255, 255, 255, 0.3);
 }
