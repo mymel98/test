@@ -3,16 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나이</title>
+    <title>자바응용2</title>
 </head>
 <body>
+    <span>태어난 월</span>
+    <select name="" id="">
+        <option value="">1월</option>
+        <option value="">2월</option>
+        <option value="">3월</option>
+        <option value="">4월</option>
+        <option value="">5월</option>
+        <option value="">6월</option>
+        <option value="">7월</option>
+        <option value="">8월</option>
+        <option value="">9월</option>
+        <option value="">10월</option>
+        <option value="">11월</option>
+        <option value="">12월</option>
+    </select>
+
+    <span>태어난 일</span>
     <script>
-        let age = prompt("나이를 입력하세요.");
-        if(age>=19){
-            alert("성인입니다.")
-        }else{
-            alert("미성년자입니다.")
-        };
+        let day = "<select>";
+        for (let i=1; i<=31; i++){
+            day = day + "<option>" + i + "일</option>"
+        }
+        day = day + "</select>"
+        document.write(day);
+    </script>
+
+    <span>태어난 년도</span>
+    <script>
+        let year = "<select>";
+        for (let y=2025; y>=1900; y--){
+            year = year + "<option>" + y + "년</option>"
+        }
+        year = year + "</select>"
+        document.write(year);
     </script>
 </body>
 </html>
