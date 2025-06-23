@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>성적처리</title>
+    <title>응용문제</title>
 </head>
 <body>
     <script>
-        let num = prompt("번호를 입력해 주세요");
-        let name = prompt("이름을 입력해 주세요");
-        let kor = prompt("국어점수를 입력해 주세요");
-        let eng = prompt("영어점수를 입력해 주세요");
-        let math = prompt("수학점수를 입력해 주세요");
-
-        let total = Number(kor) + Number(eng) + Number(math);
-        let avg = total / 3;
-
-        document.write("번호=" + num + "번.<br>");
-        document.write("이름=" + name + "님.<br>");
-        document.write("국어점수=" + kor + "점.<br>");
-        document.write("영어점수=" + eng + "점.<br>");
-        document.write("수학점수=" + math + "점.<br>");
-        document.write("총점=" + total + "점.<br>");
-        document.write("평균=" + avg + "점.<br>");
-        
+        let girl = ["윤아", "태연", "써니", "수영", "유리", "티파니", "효연", "서현"]
+        document.write("소녀시대 멤버는" + girl[0] + "입니다 <br>");
+        document.write("소녀시대 멤버는" + girl[1] + "입니다 <br>");
+        document.write("소녀시대 멤버는" + girl[2] + "입니다 <br>");
+        document.write("소녀시대 멤버는" + girl[3] + "입니다 <br>");
+        document.write("소녀시대 멤버는" + girl[4] + "입니다 <br>");
+        document.write("소녀시대 멤버는" + girl[5] + "입니다 <br>");
+        document.write("소녀시대 멤버는" + girl[6] + "입니다 <br>");
+        document.write("소녀시대 멤버는" + girl[7] + "입니다 <br>");
+        document.write("<hr>")
+        for(let i=0; i<=7; i++){
+            document.write("소녀시대 멤버는" + girl[i] + "입니다 <br>")
+        }
     </script>
 </body>
 </html>
