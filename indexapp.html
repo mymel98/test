@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열함수 응용</title>
+</head>
+<body>
+    <script>
+        let animal = [ "Aardvark",
+
+    "Albatross",
+
+    "Alligator",
+
+    "Alpaca",
+
+    "Ant",
+
+    "Ape",
+
+    "Armadillo",
+
+    "Donkey",
+
+    "Baboon",
+
+    "Badger",
+
+    "Barracuda",
+
+    "Bat",
+
+    "Bear",
+
+    "Beaver",
+
+    "Bee",
+
+    "Bison",
+
+    "Cat",
+
+    "Caterpillar",
+
+    "Cattle",
+
+    "Chamois",
+
+    "Cheetah",
+
+    "Chicken",
+
+    "Chimpanzee",
+
+    "Chinchilla",
+
+    "Chough",
+
+    "Clam",
+
+    "Cobra",
+
+    "Cockroach",
+
+    "Cod",
+
+    "Cormorant",
+
+    "Dugong",
+
+    "Dunlin",
+
+    "Eagle",
+
+    "Echidna",
+
+    "Eel",
+
+    "Eland",
+
+    "Elephant",
+
+    "Elk",
+
+    "Emu",
+
+    "Falcon",
+
+    "Ferret",
+
+    "Finch",
+
+    "Fish",
+
+    "Flamingo",
+
+    "Fly",
+
+    "Fox",
+
+    "Frog",
+
+    "Gaur", 
+
+    "Gazelle",
+
+    "Gerbil",
+
+    "Giraffe",
+
+    "Grasshopper",
+
+    "Heron",
+
+    "Herring",
+
+    "Hippopotamus",
+
+    "Hornet",
+
+    "Horse",
+
+    "Kangaroo",
+
+    "Kingfisher",
+
+    "Koala",
+
+    "Kookabura",
+
+    "Moose",
+
+    "Narwhal",
+
+    "Newt",
+
+    "Nightingale",
+
+    "Octopus",
+
+    "Okapi",
+
+    "Opossum", 
+
+    "Quail",
+
+    "Quelea",
+
+    "Quetzal",
+
+    "Rabbit", 
+
+    "Raccoon",
+
+    "Rail",
+
+    "Ram",
+
+    "Rat",
+
+    "Raven",
+
+    "Red deer",
+
+    "Sandpiper",
+
+    "Sardine",
+
+    "Sparrow",
+
+    "Spider",
+
+    "Spoonbill",
+
+    "Squid",
+
+    "Squirrel",
+
+    "Starling",
+
+    "Stingray",
+
+    "Tiger",
+
+    "Toad",
+
+    "Whale",
+
+    "Wildcat",
+
+    "Wolf",
+
+    "Worm",
+
+    "Wren",
+
+    "Yak",
+
+    "Zebra"
+
+]
+
+    document.write(animal.length + "<br>");
+    // 1.마지막 지우기
+    animal.pop();
+    document.write("1번 정답 <br>");
+    document.write(animal + "<br>");
+
+    // 2.
+    animal.push("Dog");
+    document.write("2번 정답 <br>");
+    document.write(animal + "<br>");
+    
+    // 3
+    animal.push("Mosquito", "Mouse", "Mule");
+    document.write("3번 정답 <br>");
+    document.write(animal + "<br>");
+    
+    document.write("4번 정답 <br>");
+    document.write(animal.includes("Human") + "<br>");
+    
+    document.write("5번 정답 <br>");
+    document.write(animal.includes("Cat") + "<br>");
+    
+    document.write("6번 정답 <br>");
+    animal[animal.indexOf("Red deer")] = "Deer";
+    document.write(animal + "<br>");
+    
+    document.write("7번 정답 <br>");
+    animal.splice(animal.indexOf("Spider"),3);
+    document.write(animal + "<br>");
+    
+    document.write("8번 정답 <br>");
+    animal.splice(animal.indexOf("Tiger")+1);
+    
+    document.write("9번 정답 <br>");
+    let banimal = animal.splice(animal.indexOf("Baboon"), animal.indexOf("Bisan")+1);
+    document.write(animal + "<br>");
+    
+    document.write("10번 정답 <br>");
+    document.write(animal.length + "<br>");
+    
+    document.write("11번 정답 <br>");
+    document.write(animal.sort() + "<br>")
+    
+    document.write("12번 정답 <br>");
+    let carnimal = animal.join("#");
+    document.write(carnimal + "<br>")
+    
+    document.write("13번 정답 <br>");
+    for(let i=0; i<animal.length;i++){
+        if(i%10==0){
+            document.write("<br>")
+        }
+        document.write(animal[i] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+    }
+    </script>
+</body>
+</html>
