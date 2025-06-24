@@ -3,61 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>다중if응용문제</title>
+    <title>응용문제</title>
 </head>
 <body>
     <script>
-        let name = prompt("이름을 입력하세요.");
-        let kor = prompt("국어점수를 입력하세요.");
-        let eng = prompt("영어점수를 입력하세요.");
-        let math= prompt("수학점수를 입력하세요.");
-        let com = prompt("컴퓨터점수를 입력하세요.");
-
-        let total = Number(kor) + Number(eng) + Number(math) + Number(com);
-        let avg = total/4;
+        let book = ["소년이운다", "13,600원", "한강", "2024년 12월 12일", "216페이지"]
+        document.write("책제목:" + book[0] + "<br>")
+        document.write("가격:" + book[1] + "<br>")
+        document.write("저자:" + book[2] + "<br>")
+        document.write("출간일:" + book[3] + "<br>")
+        document.write("<hr>")
         
-        let rem = '';
-        if(avg >= 90){
-            rem = '수'
-        }else if(avg >= 80){
-            rem = '우'
-        }else if(avg >= 70){
-            rem = '미'
-        }else if(avg >= 60){
-            rem = '양'
-        }else if(avg >= 50){
-            rem = '가'
+        let book2 = {
+            name: "소년이운다",
+            price: "13,600원",
+            writer: "한강",
+            date: "2024년 12월 12일",
+            page: "216페이지"
         }
+        document.write("책제목:" + book2.name + "<br>")
+        document.write("가격:" + book2.price + "<br>")
+        document.write("저자:" + book2.writer + "<br>")
+        document.write("출간일:" + book2.date + "<br>")
+        document.write("페이지수:" + book2.page + "<br>")
 
-        let cla = "";
-        if(avg >= 95){
-            cla = "A+"
-        }else if(avg >=90){
-            cla = "A"
-        }else if(avg >=85){
-            cla = "B+"
-        }else if(avg >=80){
-            cla = "B"
-        }else if(avg >=75){
-            cla = "C+"
-        }else if(avg >=70){
-            cla = "C"
-        }else if(avg >=65){
-            cla = "D+"
-        }else if(ang >=60){
-            cla = "D"
-        }else if(avg <60){
-            cla = "F"
-        }
-        
-        document.write("이름:" + name + "<br>");
-        document.write("국어점수:" + kor + "<br>");
-        document.write("영어점수:" + eng + "<br>");
-        document.write("수학점수:" + math + "<br>");
-        document.write("총점:" + total + "<br>");
-        document.write("평균:" + avg + "<br>");
-        document.write("평점:" + rem + "<br>");
-        document.write("학점:" + cla + "<br>");
     </script>
 </body>
 </html>
