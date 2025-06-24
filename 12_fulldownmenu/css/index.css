@@ -11,7 +11,11 @@ a{text-decoration: none;}
     /* height: 380px; */
     height: 110px;
     /* background: gold; */
-    border-bottom: 1px solid #c3c3c3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: gold;
 }
 header{
     width: 100%;
@@ -67,7 +71,7 @@ header .inner ul.gnb>li>.depth2{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 88px;
+    top: 110px;
     display: none;
 }
 header .inner ul.gnb>li>.depth2 li{
