@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자바스크립트 반복문 응용</title>
+    <title>객체 응용</title>
 </head>
 <body>
     <script>
-        
-        for(let i=1; i<=100; i++){
-            document.write(i + " ");
-            if(i%10 == 0){
-                document.write("<br>")
-            }
-        }
+        let schedule = {
+            
+            mon:{
+                class1: "1교시:html",
+                class2: "2교시:css"
+            },
+            tue:{
+                class1: "1교시:javascript",
+                class2: "2교시:jquary"
+            },
+            wed:{
+                class1: "1교시:작품집",
+                class2: "2교시:포트폴리오"
+            },
+        };
+        document.write("<h3>월요일</h3>")
+        document.write(schedule.mon.class1 + "<br>");
+        document.write(schedule.mon.class2 + "<br>");
+        document.write("<h3>화요일</h3>")
+        document.write(schedule.tue.class1 + "<br>");
+        document.write(schedule.tue.class2 + "<br>");
+        document.write("<h3>수요일</h3>")
+        document.write(schedule.wed.class1 + "<br>");
+        document.write(schedule.wed.class2 + "<br>");
     </script>
 </body>
 </html>
