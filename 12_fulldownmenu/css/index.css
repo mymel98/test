@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{font-family: "noto sans KR", sans-serif;}
+*{margin: 0; padding: 0; box-sizing: content-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* 헤더를 감싸는 wrap */
+#header_wrap{
+    width: 100%;
+    /* height: 380px; */
+    height: 110px;
+    /* background: gold; */
+    border-bottom: 1px solid #c3c3c3;
+}
+header{
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+}
+header .inner{
+    width: 1140px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner ul.gnb{
+    display: flex;
+    gap: 85px;
+}
+header .inner ul.gnb>li>a{
+    font-size: 18px;
+    color: #111;
+    font-weight: 500;
+    display: block;
+    /* height: 67px; */
+    line-height: 67px;
+    position: relative;
+}
+/* 구분선을 공중에 띄어서 배치 */
+header .inner ul.gnb>li>a::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #ff6400;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+header .inner ul.gnb>li:hover>a::after{
+    display: block;
+}
+header .inner ul.gnb>li{
+    position: relative;
+}
+header .inner h1 a{
+    display: block;
+    width: 186px;
+    height: 47px;
+    background: url(../images/logo_w186.png) no-repeat;
+    text-indent: -99999px;
+}
+/* 2단메뉴 */
+header .inner ul.gnb>li>.depth2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 88px;
+    display: none;
+}
+header .inner ul.gnb>li>.depth2 li{
+    width: 100px;
+    text-align: center;
+    line-height: 38px;
+}
+header .inner ul.gnb>li>.depth2 li a{
+    font-size: 15px;
+    color: #867d77;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+header .inner ul.gnb>li>.depth2 li:hover a{
+    color: #000;
+}

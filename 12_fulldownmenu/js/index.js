@@ -1,0 +1,10 @@
+$(function(){
+    $("ul.gnb").mouseenter(function(){
+        $("#header_wrap").stop().animate({"height":380},300)
+        $(".depth2").show();
+    })
+    $("ul.gnb").mouseleave(function(){
+        $("#header_wrap").stop().animate({"height":110},300)
+        $(".depth2").hide();
+    })
+})
