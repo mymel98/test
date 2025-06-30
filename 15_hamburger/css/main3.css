@@ -1,0 +1,18 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+button{border: none; cursor: pointer; background: none;}
+/* 일시정지 버튼 */
+.btn_pause{
+    width: 53px;
+    height: 53px;
+    text-indent: -99999px;
+    background: url(../images/btn_stop.png) no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* on class기법을 사용하여 플레이 버튼 */
+.btn_pause.on{
+    background: url(../images/btn_prev.png) no-repeat;
+}

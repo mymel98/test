@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응용문제</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        li{list-style: none;}
+        a{text-decoration: none;}
+        ul{
+            width: 540px;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+        }
+        ul li{
+            width: 100px;
+            text-align: center;
+        }
+        ul li a{
+            color: gray;
+        }
+        ul li.on a{
+            color: #000;
+            font-weight: 900;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+     <ul>
+        <li class="on"><a href="#">병원소식</a></li>
+        <li><a href="#">채용</a></li>
+        <li><a href="#">강좌</a></li>
+        <li><a href="#">입찰</a></li>
+        <li><a href="#">언론보도</a></li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $("ul li").click(function(){
+                $("ul li").removeClass("on")
+                $(this).addClass("on")
+            })
+        })
+    </script>
+</body>
+</html>
