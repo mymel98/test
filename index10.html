@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{margin: 0; padding: 0;}
-        div{width: 645px; border: 2px solid red; margin: auto; padding: 40px 20px 17px 20px ;}
-        div h1{text-align: center; background: #ffff00; margin-bottom: 20px;}
-        .p1{color: blue; letter-spacing: 2px; margin-bottom: 24px;}
-        h2{background: #d3d3d3; margin-top: 20px; margin-bottom: 20px; text-align: center;}
-        ul{margin-left: 40px; margin-bottom: 40px;}
-        .p2{font-size: 12px; line-height: 60px;}
-        div p span{background: #7f0081; color: #fff; font-size: 13px; padding: 8px 5px;}
-    </style>
+    <title>응용문제</title>
 </head>
 <body>
-    <div>
-        <h1>한국 영재 올림피아드</h1>
-        <p class="p1">
-            한국 영재 올림피아드(Korea Olympiad for the Gifted Studentes)는...
-        </p>
-        <h3>(↑ 클릭하면 자세한 설명으로 이동합니다.)</h3>
-        <h2>대회개요</h2>
-        <ul>
-            <li>대회일시</li>
-            <li>대회일시</li>
-            <li>대회일시</li>
-        </ul>
-        <p class="p2">
-            한국 영재 올림피아드에 참가하는 학생 여러분들을 진심으로 환영하며 격려를 아끼지 않습니다. <br>
-            과학에 관심있고 재능있는 여러분들의 도전을 응원하겠습니다!!!
-        </p>
-        <p>
-            <span>이벤트</span>
-            <span>이벤트</span>
-            <span>이벤트</span>
-        </p>
-    </div>
-    
+    <h1>회원명단</h1>
+    <ul>
+        <li>강영훈</li>
+        <li>류다은</li>
+        <li>김효중</li>
+        <li>김효연</li>
+        <li>손서옥</li>
+        <li>김지연</li>
+        <li>김소위</li>
+        <li>한소희</li>
+        <li>박민황</li>
+        <li>민지윤</li>
+        <li>최지윤</li>
+        <li>김지수</li>
+        <li>이일준</li>
+        <li>조현아</li>
+    </ul>
+
+    <script>
+        let name = document.querySelectorAll("ul li");
+        console.log(name);
+        for(let i=0; i< name.length; i++){
+            if(i%2==0){
+                name[i].style.background = 'yellow';
+                name[i].style.fontSize = "36px";
+            }
+            else{
+                name[i].style.background = 'orange';
+                name[i].style.listStyle = "none";
+                name[i].style.fontSize = "20px";
+                name[i].style.color = 'white';
+            }
+        }
+    </script>
 </body>
 </html>
