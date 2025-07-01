@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{font-family: "Noto Sans KR", sans-serif;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+section{
+    width: 100%;
+    padding: 170px 0;
+    border: 5px solid red;
+}
+section .inner{
+    width: 1140px;
+    margin: 0 auto;
+}
+section .inner h2{
+    color: #323232;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+section .inner p{
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    color: #323232;
+    text-align: center;
+}
+section .inner ul.tap{
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    margin: 40px 0;
+}
+section .inner ul.tap li a{
+    display: block;
+    width: 140px;
+    height: 45px;
+    border: 1px solid #5b5b5b;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #666;
+
+}
+section .inner ul.tap li.on a,
+section .inner ul.tap li:hover a{
+    background: #ff6400;
+    color: #fff;
+    border: 1px solid #ff6400;
+}
+section .inner ul.product{
+    display: flex;
+    justify-content: space-evenly;
+}
+section .inner ul.product li{
+    text-align: center;
+}
+section .inner ul.product li a h4{
+    margin-top: 15px;
+    font-size: 17px;
+    color: #5b5b5b;
+    font-weight: 500;
+}
+/* 삼양라면을 제외한 나머지 숨김 */
+/* section .inner .product_wrap .product2{
+    display: none;
+} */
