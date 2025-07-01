@@ -27,7 +27,7 @@ section .inner ul.tap li a{
     justify-content: center;
     align-items: center;
 }
-section .inner ul.tap li:hover a{
+section .inner ul.tap li.on a{
     color: #000;
     border-bottom: 3px solid #000;
 }
