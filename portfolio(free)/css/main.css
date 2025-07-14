@@ -12,35 +12,7 @@ a{text-decoration: none;}
 .en{
     font-family: "Cormorant", serif;
 }
-#sec0{
-    background: aqua;
-    height: 100vh;
-}
-#sec1{
-    background: aquamarine;
-    height: 100vh;
-}
-#sec2{
-    background: blueviolet;
-    height: 100vh;
-}
-#sec3{
-    background: palegreen;
-    height: 100vh;
-}
-#sec4{
-    background: palevioletred;
-    height: 100vh;
-}
-#sec5{
-    background: plum;
-    height: 100vh;
 
-}
-#sec6{
-    background: coral;
-    height: 100vh;
-}
 #fp-nav ul li a span, .fp-slidesNav ul li a span, #fp-nav ul li a span, .fp-slidesNav ul li a span  {
     background: #fff;
 }
@@ -91,9 +63,7 @@ header .navi_wrap .gnb ul li a{
     color: rgba(255, 255, 255, 0.8);
     font-size: 16px;
 }
-#fullpage .section .inner h1{
-    line-height: 100vh;
-}
+
 /* 햄버거버튼 */
 .m_btn{
     width: 30px;
