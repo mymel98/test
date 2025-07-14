@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 개발자가 속성을 만들어서 사용하고 싶을 때 -->
+    <h1 data-index="a">제목태그1</h1>
+    <h1 data-index="b">제목태그2</h1>
+    <h1 data-index="c">제목태그3</h1>
+
+    <script>
+        let tit = document.getElementsByTagName("h1")
+        console.log(tit)
+        for(let i=0; i<tit.length; i++){
+            tit[i].addEventListener("click",function(){
+                let index = this.getAttribute('data-index')
+                alert(index)
+            }
+
+            )
+        }
+    </script>
+</body>
+</html>
