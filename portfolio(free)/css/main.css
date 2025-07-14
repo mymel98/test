@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Noto Sans KR", sans-serif;
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+.en{
+    font-family: "Cormorant", serif;
+}
+#sec0{
+    background: aqua;
+    height: 100vh;
+}
+#sec1{
+    background: aquamarine;
+    height: 100vh;
+}
+#sec2{
+    background: blueviolet;
+    height: 100vh;
+}
+#sec3{
+    background: palegreen;
+    height: 100vh;
+}
+#sec4{
+    background: palevioletred;
+    height: 100vh;
+}
+#sec5{
+    background: plum;
+    height: 100vh;
+
+}
+#sec6{
+    background: coral;
+    height: 100vh;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span, #fp-nav ul li a span, .fp-slidesNav ul li a span  {
+    background: #fff;
+}
+.title{
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: #000;
+}
+header h1 a{
+    color: #fff;
+}
+header .navi_wrap{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+/* 주메뉴 */
+header .navi_wrap .gnb{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 0.5s ease-in-out;
+}
+header.on .navi_wrap .gnb{
+    transform: translateX(0);
+    opacity: 1;
+}
+header .navi_wrap .gnb ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100px;
+}
+header .navi_wrap .gnb ul li a{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+#fullpage .section .inner h1{
+    line-height: 100vh;
+}
+/* 햄버거버튼 */
+.m_btn{
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.m_btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+}
+.m_btn span:nth-child(1){
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(2){
+    top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(3){
+    top: 20px;
+    transition: all 0.5s ease-in-out;
+}
+header.on .m_btn span:nth-child(1){
+    transform: rotate(45deg);
+    top: 10px;
+}
+header.on .m_btn span:nth-child(2){
+    transform: translateX(100%);
+    opacity: 0;
+}
+header.on .m_btn span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 10px;
+}
