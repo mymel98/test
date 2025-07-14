@@ -36,6 +36,8 @@ $('.banner_slide').slick({
 });
 // 모바일 메뉴 클릭하면
 $(".m_gnb>ul>li>a" ).click(function(){
+  $(".m_gnb>ul>li>a").removeClass("on")
+  $(this).toggleClass("on")
   $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp()
 })
 // 햄버거 버튼을 클릭하면
@@ -46,5 +48,16 @@ $(".m_btn").click(function(){
 $(".m_close").click(function(){
   $(".m_side_wrap").animate({"left":'-100%'},300)
   $(".cover").fadeOut()
+})
+// 왼쪽 아이콘중에 li를 클릭하면 on클래스 
+$("ul.left_icon li").click(function(){
+  $("ul.left_icon li").removeClass('on')
+  $("ul.right_icon li").removeClass('on')
+  $(this).addClass("on")
+})
+$("ul.right_icon li").click(function(){
+  $("ul.right_icon li").removeClass('on')
+  $("ul.left_icon li").removeClass('on')
+  $(this).addClass("on")
 })
 })
