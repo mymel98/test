@@ -58,3 +58,70 @@ $(function(){
     $(this).toggleClass("on")
   })
 })
+
+// 창의 크기를 조절하는 이벤트가 발생하면 슬라이드 안에 있는 pc버전 이미지 파일을 모바일버전의 이미지로 교체
+$(window).resize(function(){
+  let num = $(this).width()
+  console.log('창의 사이즈', num)
+  if(num<=767){
+    $(".swiper .swiper-wrapper .slide1 a img").attr('src', './images/m_visual_a.jpg')
+    $(".swiper .swiper-wrapper .slide2 a img").attr('src', './images/m_visual_b.jpg')
+    $(".content .list li:nth-child(1) a img").attr('src', './images/m_catalogue.jpg')
+    $(".content .list li:nth-child(2) a img").attr('src', './images/m_video.jpg')
+    $(".content .list li:nth-child(3) a img").attr('src', './images/m_product.jpg')
+    $(".content .list li:nth-child(4) a img").attr('src', './images/m_athletic.jpg')
+    $(".content .list li:nth-child(5) a img").attr('src', './images/m_camping.jpg')
+  }else{
+    $(".swiper .swiper-wrapper .slide1 a img").attr('src', './images/visual_a.jpg')
+    $(".swiper .swiper-wrapper .slide2 a img").attr('src', './images/visual_b.jpg')
+    $(".content .list li:nth-child(1) a img").attr('src', './images/cata_ot.jpg')
+    $(".content .list li:nth-child(2) a img").attr('src', './images/video_ot.jpg')
+    $(".content .list li:nth-child(3) a img").attr('src', './images/product_ot.jpg')
+    $(".content .list li:nth-child(4) a img").attr('src', './images/athletic_ot.jpg')
+    $(".content .list li:nth-child(5) a img").attr('src', './images/camping_ot.jpg')
+  }
+  
+})
+
+// 창 크기 조절하는 이벤트 없이 반응형
+ let num = $(this).width()
+  console.log('창의 사이즈', num)
+  if(num<=767){
+    $(".swiper .swiper-wrapper .slide1 a img").attr('src', './images/m_visual_a.jpg')
+    $(".swiper .swiper-wrapper .slide2 a img").attr('src', './images/m_visual_b.jpg')
+    $(".content .list li:nth-child(1) a img").attr('src', './images/m_catalogue.jpg')
+    $(".content .list li:nth-child(2) a img").attr('src', './images/m_video.jpg')
+    $(".content .list li:nth-child(3) a img").attr('src', './images/m_product.jpg')
+    $(".content .list li:nth-child(4) a img").attr('src', './images/m_athletic.jpg')
+    $(".content .list li:nth-child(5) a img").attr('src', './images/m_camping.jpg')
+  }else{
+    $(".swiper .swiper-wrapper .slide1 a img").attr('src', './images/visual_a.jpg')
+    $(".swiper .swiper-wrapper .slide2 a img").attr('src', './images/visual_b.jpg')
+    $(".content .list li:nth-child(1) a img").attr('src', './images/cata_ot.jpg')
+    $(".content .list li:nth-child(2) a img").attr('src', './images/video_ot.jpg')
+    $(".content .list li:nth-child(3) a img").attr('src', './images/product_ot.jpg')
+    $(".content .list li:nth-child(4) a img").attr('src', './images/athletic_ot.jpg')
+    $(".content .list li:nth-child(5) a img").attr('src', './images/camping_ot.jpg')
+  }
+
+$(function(){
+  $(".m_btn").click(function(){
+    $('.cover').fadeIn();
+    $('.m_menu_wrap').addClass('on')
+    $('body, html').css({'overflow':"hidden"})
+    $('.m_menu_wrap').css({'overflow':"auto"})
+  })
+  $(".cover").click(function(){
+    $('.m_menu_wrap').removeClass('on')
+    $('.cover').fadeOut();
+    $('body,html').css({'overflow':"auto"})
+  })
+})
+
+$(".depth2").hide()
+
+$(function(){
+  $(".m_menu_wrap ul.m_gnb>li>a").click(function(){
+    $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
+  })
+})
