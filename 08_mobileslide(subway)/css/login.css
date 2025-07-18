@@ -29,10 +29,13 @@ button{border: none; background: none; cursor: pointer;}
     text-align: center;
     margin-top: 46px;
 }
-.login_wrap .login .b1,
-.login_wrap .login .b2{
+.login_wrap .login{
     display: block;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     margin: auto;
+    margin-top: 24px;
     
 }
 .login_wrap .login .b1 a{
@@ -45,17 +48,18 @@ button{border: none; background: none; cursor: pointer;}
 .login_wrap .login .b2 a{
     padding: 10px 20px;
     background: #00913a;
-    color: #000;
+    color: #fff;
     border-radius: 999px;
     font-weight: bold;
 }
 .login_wrap .login .b1 a,
 .login_wrap .login .b2 a{
+    /* display: block;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; */
+    /* align-items: center; */
     margin: 10px;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .login_wrap p{
