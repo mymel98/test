@@ -39,6 +39,9 @@ $(".m_gnb>ul>li>a" ).click(function(){
   $(".m_gnb>ul>li>a").removeClass("on")
   $(this).toggleClass("on")
   $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp()
+  
+  // $(this).parent().siblings().find('a_on').removeClass('on');
+  // $(this).toggleClass('on')
 })
 // 햄버거 버튼을 클릭하면
 $(".m_btn").click(function(){
