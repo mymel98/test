@@ -21,3 +21,25 @@ $(document).ready(function(){
     dots: true
   });
 });
+
+$(document).ready(function(){
+  $('.bannerslide').slick({
+    autoplay: true,
+    arrows: false,
+    dots: true
+  });
+});
+
+// 탭기능
+$(".tab li").click(function(e){
+  e.preventDefault()
+  $(".tab li").removeClass("on");
+  $(this).addClass("on")
+})
+
+// list 박스 선택하면 on class 추가/삭제
+$(".content ul.list li").click(function(e){
+  e.preventDefault()
+  $(".content ul.list li").removeClass("on")
+  $(this).addClass("on")
+})
