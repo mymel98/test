@@ -1,0 +1,593 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  height: 3000px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.en {
+  font-family: "cormorant", serif;
+}
+section{
+  width: 100%;
+  overflow: hidden;
+}
+
+/* header 영역 */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 30px;
+  background: #28161c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header가 위로 올라감 */
+header.move {
+  transform: translateY(-100%);
+}
+header h1 a {
+  color: #fff;
+}
+
+/* 주메뉴 */
+header .navi_wrap .gnb {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 0.5s ease-in-out;
+}
+header.on .navi_wrap .gnb {
+  transform: translateX(0);
+  opacity: 1;
+}
+header .navi_wrap .gnb ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+header .navi_wrap .gnb ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+header .navi_wrap .gnb ul li:hover a {
+  color: #fff;
+}
+
+/* 햄버거버튼 */
+header .navi_wrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.m_btn {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.m_btn span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  left: 0;
+}
+.m_btn span:nth-child(1) {
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(2) {
+  top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(3) {
+  top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+header.on .m_btn span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+header.on .m_btn span:nth-child(2) {
+  transform: translateX(100%);
+  opacity: 0;
+}
+header.on .m_btn span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+/* intro section */
+#intro {
+  width: 100%;
+  height: 100vh;
+  background: #28161c;
+  padding-top: 150px;
+  position: relative;
+}
+#intro .intro_txt {
+  font-size: 100px;
+  line-height: 0.8;
+  letter-spacing: -5px;
+  line-height: 120px;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+#intro .intro_txt .tit{
+  -webkit-text-stroke: 2px #fb4f93;
+  color: transparent;
+}
+#intro .intro_txt .tit2 {
+  font-size: 80px;
+}
+#intro .subtxt {
+  position: absolute;
+  left: 100px;
+  bottom: 150px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+}
+#intro .line1 {
+  position: absolute;
+  left: 0;
+  top: 120px;
+}
+#intro .line2 {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  z-index: 100;
+}
+#intro .scroll {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  cursor: pointer;
+  animation: scroll_ani 0.5s ease-in-out infinite;
+}
+@keyframes scroll_ani {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+/* 가로라인 애니메이션 */
+#intro.motion .line-draw {
+  /* svg애니메이션 */
+  /* 선의 전체 길이 */
+  stroke-dasharray: 1920;
+  /*모두 숨김  */
+  stroke-dashoffset: 1920;
+  animation: line1_ani 2s linear 1s forwards;
+}
+@keyframes line1_ani {
+  0% {
+    stroke-dashoffset: 1920;
+  }
+  /* 점점 선을 그리기 */
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* 세로라인 애니메이션 */
+#intro.motion .line-draw2 {
+  /* 선의전체길이 */
+  stroke-dasharray: 1024;
+  /* 모두숨김 */
+  stroke-dashoffset: 1024;
+  animation: line2_ani 2s linear 3s forwards;
+}
+
+@keyframes line2_ani {
+  0% {
+    stroke-dashoffset: 1024;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#profile {
+  width: 100%;
+  height: 1200px;
+  background: #28161c;
+  position: relative;
+  overflow: hidden;
+}
+#profile .inner {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#profile .inner h2 {
+  color: #fb4f93;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+#profile .inner .contents {
+  display: flex;
+  justify-content: space-between;
+}
+#profile .inner .contents .p_left {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#profile .inner .contents .p_left .imgbox {
+  width: 100%;
+  height: 280px;
+}
+
+#profile .inner .contents .p_left ul.info{
+  border-left:5px solid #fff
+}
+#profile .inner .contents .p_left ul.info li {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 32px;
+}
+#profile .inner .contents .p_right{
+    width: 820px;
+    /* background: GOLD; */
+}
+#profile .inner .contents .p_right .experience{
+    display:flex;
+    justify-content: flex-start;
+    align-items: start;
+} 
+.p_right .experience ul.edu{
+  margin-left: 40px;
+}
+.p_right .experience h3,
+.p_right h3
+{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 600;
+}
+.p_right .experience ul.career li,
+.p_right .experience ul.edu li
+{
+    color:rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+.p_right .skill_wrap{
+  margin-top: 60px;
+  display:flex;
+  gap: 145px;
+}
+.p_right .skill_wrap ul.list li{
+  display:flex;
+  gap:32px;
+  color:rgba(255, 255, 255, 0.5);
+  margin-bottom: 24px;
+  align-items: center;
+}
+.p_right .skill_wrap ul.list li .tit{
+  width: 100px;
+}
+.p_right .skill_wrap ul.list li .gage{
+  width: 363px;
+  height: 10px;
+  background: #000;
+  position: relative;
+}
+.p_right .skill_wrap ul.list li .gage .gagein{
+  position: absolute;
+  width: 90%;
+  height: 10px;
+  background: #d3fdd8;
+}
+.p_right .skill_wrap ul.list li:nth-child(3) .gage .gagein{
+  width: 75%;
+} 
+
+.p_right .skill_wrap ul.list li:nth-child(4) .gage .gagein{
+  width: 80%;
+}
+.p_right .skill_wrap ul.list li:nth-child(5) .gage .gagein{
+  width: 70%;
+}
+.p_right .skill_wrap ul.list li:nth-child(6) .gage .gagein{
+  width: 95%;
+}
+.p_right .skill_wrap ul.list li:nth-child(7) .gage .gagein{
+  width: 85%;
+}
+
+/* 갤러리 영역 */
+#designwork{
+  width: 100%;
+  height: 200vh;
+  background: #28161c;
+  /* overflow: hidden; */
+}
+#designwork h2{
+  text-align:center;
+  font-size: 80px;
+}
+#designwork h2 p{
+  line-height: 0.8;
+}
+#designwork h2 p.a{
+  color: #fb4f93;
+}
+#designwork h2 p.b{
+  font-size: 90px;
+}
+
+#designwork .inner{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* tab menu */
+
+/* 작품갤러리 리스트 */
+#designwork .inner ul.graphic{
+  display:grid;
+  grid-template-columns: 596px 596px;
+  grid-template-rows: 298px 298px 298px 298px;
+  gap:8px;
+  object-fit: cover;
+}
+#designwork .inner ul.graphic li{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* cover */
+#designwork .inner ul.graphic li::after{
+  content:'';
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index:10;
+  cursor: pointer;
+  opacity: 0;
+}
+#designwork .inner ul.graphic li:hover::after{
+  opacity: 1;
+}
+#designwork .inner ul.graphic li a{
+  display:block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#designwork .inner ul.graphic li a .imgbox{
+  width: 100%;
+  height: 100%;
+}
+#designwork .inner ul.graphic li a .imgbox img{
+    width: 100%;
+    height: 100%;
+    /* 이미지 왜곡 안되서 채울때 */
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+#designwork .inner ul.graphic li:hover .imgbox img{
+  transform: scale(1.8);
+}
+#designwork .inner ul.graphic li a p{
+  color:#fff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%,-50%);
+  z-index: 20;
+  transition: all 0.5s ease-in-out;
+  opacity:0;
+}
+
+#designwork .inner ul.graphic li a p span{
+  display:block;
+}
+
+/* 작품영역 work */
+#work{
+  width: 100%;
+  /* height: 100%; */
+  background: #fff;
+  color:#333; 
+  padding-bottom: 300px;
+}
+#work .tit{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 30vh;
+}
+#work .tit .left{
+  font-size: 80px;
+  color: #fb4f93;
+}
+#work .tit .right{
+  font-size: 90px;
+  color: #28161c;
+}
+/* 작품목록 */
+#work ul.list{
+  width: 80%;
+  margin: 0 auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#work ul.list li{
+  width: 45%;
+  margin-top: 150px;
+}
+#work ul.list li:nth-child(2n){
+  margin-top: 30px;
+}
+#work ul.list li a{
+  display:block;
+  width: 100%;
+}
+#work ul.list li a .imgbox{
+  width: 100%;
+  height: 500px;
+}
+#work ul.list li a .imgbox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#work ul.list li a .info{
+  padding: 20px;
+  background: #28161c;
+}
+#work ul.list li a .info h4{
+  font-size:32px;
+  color:#fff; 
+  margin-bottom: 10px;
+}
+#work ul.list li a .info .tech{
+  display:flex;
+  justify-content: space-between;
+}
+#work ul.list li a .info .tech p{
+  color:#fff;
+  font-size:18px;
+}
+
+
+
+/* Contact */
+#contact{
+  width: 100%;
+  height: 100vh;
+  background: #28161c;
+  color:#fff;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+#contact .textwrap{
+  width: 100%;
+  position: absolute;
+  left: 60px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+#contact .textwrap h2{
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+  padding-left: 60px;
+  color: #fb4f93;
+}
+#contact .textwrap .line{
+  width: 94%;
+  height: 1px;
+  background:#fff;
+  margin-bottom: 15px;
+  padding:0 60px
+}
+#contact .textwrap p{
+  color:#fff;
+  font-size:24px;
+}
+#contact .textwrap p a{
+  color:#fff;
+}
+#contact .copy{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
